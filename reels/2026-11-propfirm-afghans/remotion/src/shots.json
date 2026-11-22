@@ -400,6 +400,8 @@
    "text": [],
    "ev": {
     "truth": 0.389,
+    "good": 2.432,
+    "most": 4.34,
     "criterion": 5.702,
     "nation": 8.294,
     "res": 11.807,

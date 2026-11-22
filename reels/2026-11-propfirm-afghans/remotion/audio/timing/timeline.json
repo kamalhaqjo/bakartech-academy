@@ -480,6 +480,18 @@
    "type": "sample",
    "file": "../../../brand/sfx/click/click_01_tap.wav",
    "db": -15,
+   "t": 196.568
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 198.476
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
    "t": 199.838
   },
   {

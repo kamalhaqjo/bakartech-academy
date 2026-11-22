@@ -1,0 +1,6 @@
+propfirm_afghans_youtube.mp4 (261485686 bytes, sha256 a236562e7e1f29660dbc59787d4419319c13cd1925ed7a8eefd8c27a10b4c03b) in three pieces, because GitHub refuses files over 100 MB.
+
+Windows (cmd, in this folder):
+  copy /b propfirm_afghans_youtube.mp4.part00 + propfirm_afghans_youtube.mp4.part01 + propfirm_afghans_youtube.mp4.part02 propfirm_afghans_youtube.mp4
+Mac / Linux:
+  cat propfirm_afghans_youtube.mp4.part00 propfirm_afghans_youtube.mp4.part01 propfirm_afghans_youtube.mp4.part02 > propfirm_afghans_youtube.mp4

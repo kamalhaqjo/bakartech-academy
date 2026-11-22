@@ -852,12 +852,13 @@ export function revenue({ shot }) {
 }
 // the system rewards the disciplined and patient; rushing and excitement feed the firm's income
 export function discipline({ shot }) {
-  const t = useT(), dg = ev(shot, 'design', 0.6), cm = ev(shot, 'calm', 2.2), rs = ev(shot, 'rush', 4.4), fm = ev(shot, 'firm', 6.2);
+  const t = useT(), dg = ev(shot, 'design', 0.6), cm = ev(shot, 'calm', 2.2), rs = ev(shot, 'rush', 4.4), fm = ev(shot, 'firm', 6.2), pre = 0.25 * pop(t, 0.8);
   return <AbsoluteFill>
+    <Chip text="این یعنی چه؟" k={slot(t, 0.3, dg - 0.1)} y={140} size={40} />
     <Chip text="سیستم طوری طراحی شده که…" k={pop(t, dg)} y={140} size={38} />
-    <div style={{ position: 'absolute', left: 280, top: 270, width: 1360, height: 190, ...glass(C.green), opacity: pop(t, cm), display: 'flex', alignItems: 'center', gap: 26, padding: '0 40px', ...rtl }}>
+    <div style={{ position: 'absolute', left: 280, top: 270, width: 1360, height: 190, ...glass(C.green), opacity: Math.max(pre, pop(t, cm)), display: 'flex', alignItems: 'center', gap: 26, padding: '0 40px', ...rtl }}>
       <Ico n="user" s={110} c={C.green} sw={6} /><span style={txt(48, 900, C.green)}>منظم و صبور</span><span style={{ flex: 1, height: 6, background: `linear-gradient(270deg, ${C.green}, rgba(38,166,154,0.2))`, borderRadius: 3 }} /><Gly n="trophy" s={110} c={C.gold2} sw={6} /><span style={txt(40, 900, C.ink)}>برنده</span></div>
-    <div style={{ position: 'absolute', left: 280, top: 500, width: 1360, height: 190, ...glass(C.red), opacity: pop(t, rs), display: 'flex', alignItems: 'center', gap: 26, padding: '0 40px', ...rtl }}>
+    <div style={{ position: 'absolute', left: 280, top: 500, width: 1360, height: 190, ...glass(C.red), opacity: Math.max(pre, pop(t, rs)), display: 'flex', alignItems: 'center', gap: 26, padding: '0 40px', ...rtl }}>
       <Gly n="angry" s={110} c={C.red} sw={6} /><span style={txt(48, 900, C.red)}>عجله و هیجان</span><span style={{ flex: 1, height: 6, background: `linear-gradient(270deg, ${C.red}, rgba(230,50,18,0.2))`, borderRadius: 3 }} /><Gly n="bank" s={110} c={C.gold2} sw={6} /><span style={{ ...txt(40, 900, C.ink), opacity: pop(t, fm) }}>درآمد شرکت</span></div>
   </AbsoluteFill>;
 }
@@ -900,14 +901,15 @@ const CTRY = [['sa', 'عربستان'], ['ae', 'امارات'], ['tr', 'ترکی
 export function residence({ shot }) {
   const t = useT(), tr = ev(shot, 'truth', 0.2), cr = ev(shot, 'criterion', 2.4), nt = ev(shot, 'nation', 3.6), rs = ev(shot, 'res', 6.0), ps = ev(shot, 'pass', 9.6), wd = ev(shot, 'wd', 12.0);
   return <AbsoluteFill>
-    <div style={{ position: 'absolute', left: 260, top: 140, display: 'flex', gap: 16, alignItems: 'center', ...rtl, opacity: pop(t, tr) }}><Badge text="حقیقت دوم" /><span style={txt(36, 900, C.green)}>خبر خوب</span></div>
+    <div style={{ position: 'absolute', left: 260, top: 140, display: 'flex', gap: 16, alignItems: 'center', ...rtl, opacity: pop(t, tr) }}><Badge text="حقیقت دوم" /><span style={{ ...txt(36, 900, C.green), opacity: pop(t, ev(shot, 'good', 1.6)), display: 'flex', alignItems: 'center', gap: 10 }}><Ico n="check" s={34} c={C.green} sw={11} />خبر خوب</span></div>
+    <Chip text="در بیشتر شرکت‌ها…" k={slot(t, ev(shot, 'most', 3.4), cr - 0.1)} x={260} y={250} size={36} />
     <div style={{ position: 'absolute', left: 260, top: 250, display: 'flex', gap: 24, alignItems: 'center', ...rtl, opacity: pop(t, cr) }}>
       <span style={txt(46, 900, C.ink)}>ملاک:</span><span style={{ ...glass(C.green), padding: '8px 26px 12px', ...txt(46, 900, C.green) }}>محل زندگی</span>
       <span style={{ ...txt(46, 900, C.mute), opacity: pop(t, nt), textDecoration: 'line-through' }}>نه ملیت</span></div>
-    <div style={{ position: 'absolute', left: 260, top: 380, width: 440, height: 300, ...glass(C.gold), opacity: pop(t, rs - 0.6), ...center, gap: 20, ...rtl }}>
+    <div style={{ position: 'absolute', left: 260, top: 380, width: 440, height: 300, ...glass(C.gold), opacity: pop(t, ev(shot, 'good', rs - 0.6)), ...center, gap: 20, ...rtl }}>
       <div style={{ ...center, flexDirection: 'column', gap: 8 }}><Ico n="user" s={120} c={C.ink} sw={5} /><span style={txt(30, 900, C.ink)}>افغانِ مقیم خارج</span></div>
       <div style={{ ...center, flexDirection: 'column', gap: 12, opacity: pop(t, ps) }}><Gly n="passport" s={70} c={C.gold2} /><Gly n="card" s={70} c={C.gold2} /><span style={txt(22, 800, C.mute)}>پاسپورت + اقامه</span></div></div>
-    {CTRY.map(([k0, lab], i) => { const k = pop(t, ev(shot, k0, rs + 0.5 + i * 0.6)); return <div key={i} style={{ position: 'absolute', left: 800 + (i % 2) * 430, top: 380 + Math.floor(i / 2) * 150, width: 390, height: 120, ...glass(C.green), opacity: k, transform: `scale(${0.85 + 0.15 * k})`, display: 'flex', alignItems: 'center', gap: 18, padding: '0 24px', ...rtl }}>
+    {CTRY.map(([k0, lab], i) => { const k = pop(t, ev(shot, k0, rs + 0.5 + i * 0.6)); return <div key={i} style={{ position: 'absolute', left: 800 + (i % 2) * 430, top: 380 + Math.floor(i / 2) * 150, width: 390, height: 120, ...glass(C.green), opacity: Math.max(0.2 * pop(t, 0.5 + i * 0.15), k), transform: `scale(${0.85 + 0.15 * k})`, display: 'flex', alignItems: 'center', gap: 18, padding: '0 24px', ...rtl }}>
       <OkMark ok s={46} /><span style={txt(40, 900, C.ink)}>{lab}</span><span style={{ marginRight: 'auto', ...txt(22, 800, C.mute) }}>با اقامه قانونی</span></div>; })}
     <Cap text="مقیم افغانستان ❌  ·  افغانِ مقیم خارج با اقامه ✅" k={pop(t, wd)} y={700} />
   </AbsoluteFill>;

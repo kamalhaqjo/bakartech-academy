@@ -1,0 +1,11 @@
+import React from 'react';
+import { Composition } from 'remotion';
+import { Lesson } from './Lesson.jsx';
+import { Short, END } from './Short.jsx';
+import data from './shots.json';
+
+export const RemotionRoot = () => <>
+  <Composition id="PropFirmAfghans" component={Lesson} durationInFrames={Math.round(data.duration * data.fps)} fps={data.fps} width={1920} height={1080} defaultProps={{ audio: true }} />
+  <Composition id="Short" component={Short} durationInFrames={300} fps={data.fps} width={1080} height={1920} defaultProps={{ from: 0, to: 10, title: '' }}
+    calculateMetadata={({ props }) => ({ durationInFrames: Math.round((props.to - props.from + END) * data.fps) })} />
+</>;

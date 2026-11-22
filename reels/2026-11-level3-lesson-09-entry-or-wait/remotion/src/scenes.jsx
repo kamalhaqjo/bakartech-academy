@@ -550,9 +550,9 @@ export function mistakeAfter({ shot }) {
   const pill = (x, y, k, text, col) => <div style={{ position: 'absolute', left: x, top: y + 40, width: 300, height: 90, borderRadius: 20, background: col, opacity: k, transform: `scale(${0.85 + 0.15 * k})`, ...center, ...txt(40, 900, '#fff'), ...rtl }}>{text}</div>;
   const fast = Math.floor(7 * prog(t, pv - 0.4, 1.0));
   return <AbsoluteFill>
-    <div style={{ position: 'absolute', left: 260, top: 130, display: 'flex', alignItems: 'center', gap: 16, opacity: pop(t, 0.1), ...rtl }}><Ico n="warn" s={64} c={C.red} sw={8} /><span style={txt(56, 900, C.ink)}>اشتباه رایج</span></div>
+    <div style={{ position: 'absolute', left: 260, top: 130, display: 'flex', alignItems: 'center', gap: 16, opacity: pop(t, 0.1), ...rtl }}><div style={{ transform: `scale(${1 + 0.12 * Math.max(0, Math.sin(t * 5)) * (1 - pop(t, af))})` }}><Ico n="warn" s={64} c={C.red} sw={8} /></div><span style={txt(56, 900, C.ink)}>اشتباه رایج</span><span style={{ ...txt(34, 800, C.mute), opacity: pop(t, 1.2) }}>خیلی‌ها…</span></div>
     <AbsoluteFill style={{ opacity: 1 - 0.55 * pop(t, bf) }}>
-      {pill(300, 250, pop(t, af - 0.4), 'ورود', C.red)}{box(760, 250, pop(t, af), fast, C.red, 'بعد از ورود: پر کردن چک‌لیست')}
+      {pill(300, 250, pop(t, 0.8), 'ورود', C.red)}{box(760, 250, pop(t, 1.6) * (0.45 + 0.55 * pop(t, af)), fast, C.red, 'بعد از ورود: پر کردن چک‌لیست')}
       <SVG><Arrow x1={620} y1={335} x2={740} y2={335} c={C.red} w={6} head={16} p={prog(t, af - 0.2, 0.4)} /><XMark x={1240} y={335} r={40} k={pop(t, af + 0.5)} /></SVG>
       <Chip text="تا ثابت کنند کار درستی کرده‌اند" k={pop(t, pv)} x={1300} y={300} size={28} tone={C.red} color={C.red} />
     </AbsoluteFill>

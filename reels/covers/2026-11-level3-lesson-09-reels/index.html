@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fa">
+<head>
+<meta charset="utf-8">
+<title>Bakartech Reels cover - level 3, lesson 9</title>
+<link rel="stylesheet" href="fonts.css">
+<style>
+/* 1080x1920 vertical (9:16) Reels cover; titles and logo stay inside the 3:4 profile-grid crop (y 240-1680). Never put dir="rtl" on <html>: direction is set per container. */
+html,body{margin:0;padding:0;background:#000}
+#cover{position:relative;width:1080px;height:1920px;overflow:hidden;color:#fff;font-family:'Vazir','Lalezar',sans-serif;
+  background:linear-gradient(180deg,#04060c 0%,#08101f 46%,#120c07 100%)}
+#cover *{box-sizing:border-box}
+.abs{position:absolute}
+.rtl{direction:rtl;unicode-bidi:isolate}
+.ltr{direction:ltr;unicode-bidi:isolate}
+
+/* depth: warm glows, a calm candlestick chart receding into the distance, soft vignette */
+#glow{position:absolute;inset:0;background:
+  radial-gradient(720px 560px at 60% 74%,rgba(245,185,66,.20),rgba(245,185,66,0) 70%),
+  radial-gradient(700px 520px at 45% 62%,rgba(70,214,255,.15),rgba(70,214,255,0) 70%),
+  radial-gradient(640px 480px at 88% 10%,rgba(255,138,31,.14),rgba(255,138,31,0) 70%),
+  radial-gradient(900px 600px at 30% 40%,rgba(255,138,31,.07),rgba(255,138,31,0) 70%)}
+.chartwrap{position:absolute;pointer-events:none}
+#far{left:-700px;top:430px;width:2400px;height:1300px;opacity:.30;filter:blur(10px);transform:perspective(1500px) rotateX(14deg) rotateY(-18deg) scale(1.1);transform-origin:50% 40%;
+  -webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 30%,#000 80%,transparent 100%)}
+#mid{left:-660px;top:760px;width:2000px;height:900px;opacity:.9;filter:blur(1.1px);transform:perspective(1500px) rotateX(14deg) rotateY(-14deg);transform-origin:50% 100%;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 16%,#000 90%,transparent 100%),linear-gradient(180deg,transparent 0%,#000 30%,#000 82%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+.chartwrap svg{display:block;width:100%;height:100%}
+/* scrim keeps the headline readable even at thumbnail size */
+#scrim{position:absolute;inset:0;background:
+  radial-gradient(640px 560px at 50% 33%,rgba(4,6,12,.64),rgba(4,6,12,0) 72%),
+  linear-gradient(180deg,rgba(4,6,12,.58) 0%,rgba(4,6,12,0) 14%,rgba(4,6,12,0) 86%,rgba(4,6,12,.62) 100%)}
+#subscrim{position:absolute;left:0;top:820px;width:1080px;height:230px;background:radial-gradient(ellipse closest-side at 50% 50%,rgba(4,6,12,.80) 0%,rgba(4,6,12,.58) 55%,rgba(4,6,12,0) 100%)}
+#vignette{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,rgba(0,0,0,0) 58%,rgba(0,0,0,.5) 100%)}
+
+/* symbols: price bouncing between a green support zone and a red resistance zone (same colours as the video) */
+#icons{position:absolute;left:340px;top:1066px;width:860px;height:640px;transform:scale(.74);transform-origin:0 0}
+#icons svg{position:absolute;inset:0;overflow:visible}
+
+/* the owner's logo (top-left, inside the 3:4 grid crop), same file as in the video */
+#logo{position:absolute;left:44px;top:236px;height:150px;filter:drop-shadow(0 6px 16px rgba(0,0,0,.5))}
+
+/* corner badge (top-right) */
+#badge{position:absolute;right:48px;top:250px;height:84px;padding:0 44px;border-radius:24px;display:flex;align-items:center;justify-content:center;direction:rtl;
+  font-family:'Vazir';font-weight:900;font-size:56px;color:#1b1203;white-space:nowrap;
+  background:linear-gradient(115deg,#ffe48a 0%,#f7bd3c 52%,#ff8a1f 130%);box-shadow:0 10px 30px rgba(0,0,0,.4),0 0 44px rgba(255,170,40,.32),inset 0 2px 0 rgba(255,255,255,.55)}
+
+/* headline */
+#title{position:absolute;left:0;top:372px;width:1080px;direction:rtl;text-align:center}
+#t1,#t2{display:block;font-family:'Lalezar';font-weight:400;white-space:nowrap;line-height:1.02}
+#t1{font-size:250px;color:#f8f3e8;filter:drop-shadow(0 7px 0 rgba(0,0,0,.55)) drop-shadow(0 0 30px rgba(0,0,0,.45))}
+#t2{font-size:336px;margin-top:-10px;filter:drop-shadow(0 8px 0 rgba(60,24,0,.7)) drop-shadow(0 0 46px rgba(255,150,40,.42))}
+#t2 span{background:linear-gradient(180deg,#fff0b0 0%,#ffcf4d 42%,#ff9a1f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+#accent{position:absolute;left:430px;top:896px;width:220px;height:9px;border-radius:5px;background:linear-gradient(270deg,#ffdf8a,#f5b942 55%,#ff8a1f)}
+#sub{position:absolute;left:0;top:918px;width:1080px;direction:rtl;text-align:center;white-space:nowrap;font-family:'Vazir';font-weight:700;font-size:56px;line-height:1.3;color:rgba(255,255,255,.92);
+  text-shadow:0 3px 0 rgba(0,0,0,.5),0 0 24px rgba(0,0,0,.5)}
+#sub em{font-style:normal;font-weight:900;color:#ffd98a}
+
+/* brand circle (photo) bottom-left */
+#brand{position:absolute;left:60px;top:1292px;width:258px;height:258px}
+#brand svg.ring{position:absolute;inset:0;overflow:visible}
+#avatar{position:absolute;left:19px;top:19px;width:220px;height:220px;border-radius:50%;overflow:hidden;background:#121826}
+#avatar img{width:100%;height:100%;object-fit:cover;display:block}
+#avatar svg{width:100%;height:100%;display:block}
+
+/* footer line */
+#foot{position:absolute;left:60px;right:60px;top:1568px;height:92px;border-radius:46px;display:flex;align-items:center;justify-content:center;direction:rtl;
+  font-family:'Vazir';font-weight:700;font-size:44px;color:#fff;white-space:nowrap;
+  background:linear-gradient(180deg,rgba(255,255,255,.13),rgba(255,255,255,.05));border:1.5px solid rgba(255,255,255,.26);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 10px 30px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.3)}
+#foot .sep{color:rgba(255,255,255,.45);margin:0 20px;font-weight:400}
+#foot .bk{font-family:'Vazir';font-weight:900;font-size:48px;letter-spacing:.01em;background:linear-gradient(180deg,#ffe48a,#ffb42b 60%,#ff8a1f);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* chips on the art (same glass notes as in the video) */
+.chip{position:absolute;direction:rtl;unicode-bidi:isolate;white-space:nowrap;font-family:'Vazir';font-weight:900;font-size:40px;line-height:1;padding:12px 24px 13px;border-radius:16px;
+  background:rgba(19,23,34,.82);border:2px solid rgba(255,255,255,.2);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.14),0 10px 26px rgba(0,0,0,.45)}
+#sub .g{color:#4CC3B5} #sub .r{color:#FF7B78} #sub .y{color:#F6C35B}
+</style>
+</head>
+<body>
+<div id="cover">
+  <div id="glow"></div>
+  <div id="far" class="chartwrap"><svg id="chartA" viewBox="0 0 2400 1000" preserveAspectRatio="none"></svg></div>
+  <div id="mid" class="chartwrap"><svg id="chartB" viewBox="0 0 2400 1000" preserveAspectRatio="none"></svg></div>
+  <div id="scrim"></div>
+  <div id="subscrim"></div>
+  <div id="vignette"></div>
+
+  <div id="icons"><svg id="art" viewBox="0 0 860 640" width="860" height="640"></svg></div>
+
+  <img id="logo" data-check="wm" src="assets/kamal_logo.png" alt="">
+  <div id="badge" data-check="text">سطح ۳ · درس ۹</div>
+
+  <div id="title" class="rtl">
+    <span id="t1" data-check="text">چک‌لیست ۷ قدمی</span>
+    <span id="t2" data-check="text"><span>ورود یا صبر؟</span></span>
+  </div>
+  <i id="accent"></i>
+  <div id="sub" data-check="text">یک تصمیم کامل روی <b class="y">طلا</b></div>
+  
+  <div id="brand" data-check="brand">
+    <svg class="ring" viewBox="0 0 258 258" width="258" height="258">
+      <defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe48a"/><stop offset=".55" stop-color="#ffc21f"/><stop offset="1" stop-color="#ff8a1f"/></linearGradient>
+        <filter id="rglow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter></defs>
+      <circle cx="129" cy="129" r="122" fill="none" stroke="rgba(255,170,40,.5)" stroke-width="14" filter="url(#rglow)"/>
+      <circle cx="129" cy="129" r="122" fill="none" stroke="url(#rg)" stroke-width="9"/>
+    </svg>
+    <div id="avatar"><img id="photo" alt="" style="display:none"><svg id="ph" viewBox="0 0 100 100"><rect width="100" height="100" fill="#121826"/><circle cx="50" cy="38" r="16" fill="#3d3620"/><path d="M18 92c2-22 16-33 32-33s30 11 32 33z" fill="#3d3620"/></svg></div>
+  </div>
+
+  <div id="foot" data-check="text"><span>سطح ۳ · آموزش ترید حرفه‌ای</span><span class="sep ltr">|</span><span class="bk ltr">Bakartech</span></div>
+</div>
+
+<script>
+(function () {
+  /* ---- deterministic, calm candlestick chart (seeded; decorative, not market data) ---- */
+  function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+  const rnd = mulberry32(20261103);
+  const N = 74, cs = []; let p = 100, vol = 1;
+  for (let i = 0; i < N; i++) {
+    vol = 0.86 * vol + 0.14 * (0.55 + rnd() * 1.25);
+    const drift = 0.22 + 0.4 * Math.sin(i / 7.5 + 0.8);               // a calm uptrend
+    const o = p, c = p + drift + (rnd() - 0.5) * 2.0 * vol;
+    const h = Math.max(o, c) + rnd() * 0.9 * vol, l = Math.min(o, c) - rnd() * 0.9 * vol;
+    cs.push({ o, c, h, l, v: 0.35 + Math.abs(c - o) * 0.5 + rnd() * 0.5 }); p = c;
+  }
+  const lo = Math.min(...cs.map(x => x.l)), hi = Math.max(...cs.map(x => x.h));
+  const W = 2400, H = 1000, top = 130, bot = 800, vtop = 840, vbot = 980, step = W / (N + 1);
+  const Y = v => bot - (v - lo) / (hi - lo) * (bot - top), vmax = Math.max(...cs.map(x => x.v));
+  const ma = cs.map((_, i) => { const s = cs.slice(Math.max(0, i - 19), i + 1); return s.reduce((a, b) => a + b.c, 0) / s.length; });
+  function draw(svg) {
+    let s = '';
+    for (let g = 0; g <= 7; g++) { const y = top + g * (bot - top) / 7; s += `<line x1="0" y1="${y.toFixed(1)}" x2="${W}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,.07)" stroke-width="1.5"/>`; }
+    for (let g = 0; g <= 12; g++) { const x = g * W / 12; s += `<line x1="${x.toFixed(1)}" y1="${top}" x2="${x.toFixed(1)}" y2="${vbot}" stroke="rgba(255,255,255,.04)" stroke-width="1.5"/>`; }
+    cs.forEach((c, i) => {
+      const x = (i + 1) * step, up = c.c >= c.o, col = up ? '#26A69A' : '#EF5350', yo = Y(c.o), yc = Y(c.c);
+      s += `<line x1="${x.toFixed(1)}" y1="${Y(c.h).toFixed(1)}" x2="${x.toFixed(1)}" y2="${Y(c.l).toFixed(1)}" stroke="${col}" stroke-width="3"/>`;
+      s += `<rect x="${(x - step * 0.3).toFixed(1)}" y="${Math.min(yo, yc).toFixed(1)}" width="${(step * 0.6).toFixed(1)}" height="${Math.max(4, Math.abs(yo - yc)).toFixed(1)}" rx="2" fill="${col}"/>`;
+      const vh = c.v / vmax * (vbot - vtop);
+      s += `<rect x="${(x - step * 0.3).toFixed(1)}" y="${(vbot - vh).toFixed(1)}" width="${(step * 0.6).toFixed(1)}" height="${vh.toFixed(1)}" fill="${up ? 'rgba(38,166,154,.35)' : 'rgba(239,83,80,.35)'}"/>`;
+    });
+    const d = ma.map((v, i) => `${i ? 'L' : 'M'}${((i + 1) * step).toFixed(1)} ${Y(v).toFixed(1)}`).join(' ');
+    s += `<path d="${d}" fill="none" stroke="#ffb42b" stroke-width="9" opacity=".35" stroke-linejoin="round" filter="url(#mablur)"/><path d="${d}" fill="none" stroke="#ffc547" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>`;
+    svg.innerHTML = '<defs><filter id="mablur" x="-5%" y="-20%" width="110%" height="140%"><feGaussianBlur stdDeviation="8"/></filter></defs>' + s;
+  }
+  draw(document.getElementById('chartA')); draw(document.getElementById('chartB'));
+
+
+
+  /* ---- the lesson's idea: the seven-step checklist; steps 1-3 ticked green, step 4 «زمان» a red cross, 5-7 still empty; the decision:
+     «ورود» dim, «صبر» lit in gold with a pause sign ---- */
+  (function drawArt() {
+    const svg = document.getElementById('art'), G = '#26A69A', R = '#E63212', GOLD = '#D4AF37', HI = '#E8C96A', INK = '#f8f3e8', MUTE = 'rgba(248,243,232,.5)';
+    let s = '<defs><filter id="ag" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="26"/></filter>'
+      + '<linearGradient id="gstep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE48A"/><stop offset=".55" stop-color="#D4AF37"/><stop offset="1" stop-color="#8B6B1E"/></linearGradient></defs>';
+    s += `<ellipse cx="430" cy="320" rx="400" ry="270" fill="rgba(212,175,55,.16)" filter="url(#ag)"/>`;
+    s += `<rect x="20" y="20" width="820" height="600" rx="26" fill="rgba(19,23,34,.92)" stroke="rgba(232,201,106,.55)" stroke-width="3"/>`;
+    const L = ['جهت بزرگ', 'ناحیه', 'نقدینگی', 'زمان', 'تأیید', 'خبر', 'سود به ضرر'], st = [1, 1, 1, -1, 0, 0, 0];
+    s += `<text x="800" y="86" text-anchor="start" direction="rtl" font-family="Vazir" font-weight="900" font-size="40" fill="${HI}">چک‌لیست ۷ قدمی</text>`;
+    L.forEach((t, i) => { const y = 150 + i * 66, c = st[i] > 0 ? G : st[i] < 0 ? R : MUTE, bx = 770;
+      if (st[i] < 0) s += `<rect x="420" y="${y - 30}" width="390" height="60" rx="12" fill="rgba(230,50,18,.14)"/>`;
+      s += `<rect x="${bx - 20}" y="${y - 20}" width="40" height="40" rx="9" fill="none" stroke="${c}" stroke-width="4.5"/>`;
+      if (st[i] > 0) s += `<path d="M ${bx - 11} ${y} L ${bx - 3} ${y + 9} L ${bx + 12} ${y - 10}" fill="none" stroke="${G}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>`;
+      if (st[i] < 0) s += `<path d="M ${bx - 9} ${y - 9} L ${bx + 9} ${y + 9} M ${bx + 9} ${y - 9} L ${bx - 9} ${y + 9}" stroke="${R}" stroke-width="6" stroke-linecap="round"/>`;
+      s += `<text x="${bx - 36}" y="${y + 12}" text-anchor="start" direction="rtl" font-family="Vazir" font-weight="800" font-size="34" fill="${st[i] > 0 ? INK : c}">${'۱۲۳۴۵۶۷'[i]}. ${t}</text>`; });
+    s += `<line x1="400" y1="60" x2="400" y2="580" stroke="rgba(255,255,255,.1)" stroke-width="2"/>`;
+    s += `<rect x="70" y="130" width="280" height="120" rx="22" fill="rgba(38,166,154,.10)" stroke="rgba(38,166,154,.45)" stroke-width="3" stroke-dasharray="10 8"/>`;
+    s += `<text x="210" y="207" text-anchor="middle" direction="rtl" font-family="Vazir" font-weight="900" font-size="52" fill="rgba(38,166,154,.6)">ورود</text>`;
+    s += `<text x="210" y="320" text-anchor="middle" font-family="Vazir" font-weight="900" font-size="56" fill="${MUTE}">یا</text>`;
+    s += `<rect x="60" y="370" width="300" height="160" rx="26" fill="url(#gstep)" stroke="#FFE48A" stroke-width="4"/>`;
+    s += `<rect x="96" y="415" width="16" height="70" rx="5" fill="#1b1203"/><rect x="124" y="415" width="16" height="70" rx="5" fill="#1b1203"/>`;
+    s += `<text x="250" y="478" text-anchor="middle" direction="rtl" font-family="Vazir" font-weight="900" font-size="68" fill="#1b1203">صبر</text>`;
+    svg.innerHTML = s;
+    window.__placeChips = () => {};
+  })();
+  /* ---- optional brand photo: input/kamal.jpg (injected as window.PHOTO by tools/cover.mjs) ---- */
+  if (window.PHOTO) { const im = document.getElementById('photo'); im.src = window.PHOTO; im.style.display = 'block'; document.getElementById('ph').style.display = 'none'; }
+
+  /* ---- layout checks: fit the headline, keep everything inside the canvas, no overlaps ---- */
+  function fit() {
+    const t1 = document.getElementById('t1'), t2 = document.getElementById('t2');
+    const maxW = 960; [[t1, 250], [t2, 336]].forEach(([e, fs]) => { e.style.fontSize = fs + 'px'; e.style.display = 'inline-block'; const w = e.getBoundingClientRect().width; e.style.display = ''; if (w > maxW) e.style.fontSize = (fs * maxW / w).toFixed(1) + 'px'; });   // measure the text, not the full-width block
+  }
+  window.COVER = { ready: document.fonts.ready.then(() => { fit(); window.__placeChips(); return document.fonts.ready; }),
+    checks() {
+      const out = [], els = [...document.querySelectorAll('[data-check]')];
+      const R = els.map(e => { const c = (e.getAttribute('data-check') === 'text' ? (e.firstElementChild && e.id === 't2' ? e.firstElementChild : e) : e); const r = c.getBoundingClientRect(); return { id: e.id || e.className, kind: e.getAttribute('data-check'), x: r.left, y: r.top, w: r.width, h: r.height, r: r.right, b: r.bottom }; });
+      return R;
+    } };
+})();
+</script>
+</body>
+</html>

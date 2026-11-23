@@ -1,0 +1,6 @@
+l3_lesson11_youtube.mp4 (118114195 bytes, sha256 e3842768dae7a0f4970271d6a2d4a7867a1d94c14585772a8c32f71130b6f619) in 2 pieces, because GitHub refuses files over 100 MB.
+
+Windows (cmd, in this folder):
+  copy /b l3_lesson11_youtube.mp4.part00 + l3_lesson11_youtube.mp4.part01 l3_lesson11_youtube.mp4
+Mac / Linux:
+  cat l3_lesson11_youtube.mp4.part00 l3_lesson11_youtube.mp4.part01 > l3_lesson11_youtube.mp4

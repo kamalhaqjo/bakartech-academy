@@ -1,0 +1,19 @@
+{
+  "name": "bakartech-lesson16-remotion",
+  "private": true,
+  "type": "module",
+  "description": "Lesson 14 (the platform and the first demo trade) rendered shot by shot from ../DIRECTOR.md with Remotion: one component per shot, the narration + score + SFX mix from tools/sound.py.",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "sheet": "node render.mjs --sheet",
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539"
+  }
+}

@@ -1,0 +1,5 @@
+out/
+build/
+clips/
+timing/*.log
+*.log

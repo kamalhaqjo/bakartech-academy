@@ -1,0 +1,53 @@
+{
+ "types": {
+  "typo": "تایپوگرافی سینمایی",
+  "scene": "صحنه‌سازی",
+  "info": "اینفوگرافیک",
+  "ui": "UI متحرک",
+  "object": "موشن‌گرافیک اشیا",
+  "chart": "چارت",
+  "cta": "CTA",
+  "brand": "پایان برند",
+  "recap": "مرور",
+  "map": "نقشه (map-route)",
+  "teardown": "کالبدشکافی (teardown)",
+  "stat": "نمودار مقایسه (stat-chart)",
+  "paper": "میز کاغذی (paper-desk)",
+  "preview": "پیش‌نمایش",
+  "title": "کارت فصل"
+ },
+ "count": {
+  "typo": 3,
+  "info": 3,
+  "recap": 2,
+  "title": 2,
+  "object": 4,
+  "chart": 3,
+  "ui": 2,
+  "paper": 3,
+  "stat": 2,
+  "scene": 2,
+  "teardown": 1,
+  "map": 1,
+  "cta": 1,
+  "preview": 1,
+  "brand": 1
+ },
+ "seconds": {
+  "typo": 22.7,
+  "info": 52.3,
+  "recap": 45.4,
+  "title": 6.4,
+  "object": 40.2,
+  "chart": 49.9,
+  "ui": 18.1,
+  "paper": 46.0,
+  "stat": 37.1,
+  "scene": 12.7,
+  "teardown": 21.5,
+  "map": 22.8,
+  "cta": 15.4,
+  "preview": 16.5,
+  "brand": 9.3
+ }
+}

@@ -1,0 +1,1019 @@
+{
+ "mode": "lesson",
+ "duration": 484.85,
+ "fps": 30,
+ "voice_src": "../../input/voice.mp3",
+ "voice_cut": 480.45,
+ "sfx": [
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 0.9,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_01_boom.wav",
+   "db": -11,
+   "t": 0.9
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 1.886
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 5.224
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 6.427
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 14.232
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 15.486
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 17.874
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 19.104
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 20.043
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 21.652
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 23.852
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 30.114
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 32.383
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 34.426
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 37.408
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 39.372,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_01_boom.wav",
+   "db": -12,
+   "t": 39.372
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 45.64
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 46.961
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 53.043
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 54.809
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 55.448
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 57.463
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 61.678
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 65.538
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 67.219
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 68.052
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 68.8
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 70.802
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 73.581
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 76.597
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 80.019
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 85.165
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 92.016
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 95.67
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 100.479
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 103.584
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 107.542
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 109.122
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 111.758
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 115.167
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 117.62
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 125.66
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 128.991
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 131.822
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 133.734
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 137.148
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 137.941
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 140.56
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 143.458
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 145.728
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 147.474
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 151.591
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 153.756,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_01_boom.wav",
+   "db": -12,
+   "t": 153.756
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 159.074
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 164.385
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 166.391
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 169.691
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 173.831
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 175.981
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 177.728
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 182.052,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_01_boom.wav",
+   "db": -12,
+   "t": 182.052
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 187.869
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 191.594
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 193.391
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 199.289
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 200.943
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 207.334
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 209.616
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 213.447
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 213.471
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 215.147
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 220.616
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 222.702
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 227.865
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 229.952
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 231.03
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 236.851
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 239.888
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 243.787
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 244.691
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 246.568
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 247.003
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 250.995
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 253.624
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 260.373
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 262.686
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_05_slide.wav",
+   "db": -13,
+   "t": 266.661
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 270.86
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 273.866
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 280.267
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 283.587
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 286.023
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 290.4
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 292.816
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 296.709
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 299.798,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_01_boom.wav",
+   "db": -12,
+   "t": 299.798
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 303.81
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_05_correct.wav",
+   "db": -14,
+   "t": 308.595
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 310.149
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 313.981
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 317.895
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 322.335
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 326.194
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 327.879
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 330.27
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 336.751
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 343.984
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 347.644,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_01_boom.wav",
+   "db": -12,
+   "t": 347.644
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 354.389
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 356.072
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 368.768
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 372.103
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 374.927
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 377.49
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 381.187
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 385.2
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 389.246
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 391.063
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 393.715
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 395.926
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 398.793
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 412.722
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 415.191
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 422.654
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 425.984
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 427.709
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 429.506
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 431.23
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 432.835
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 434.764
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 436.336
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 438.26
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 440.721
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 443.504
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 446.962
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 447.369
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 450.358
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 451.281
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 453.805
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 455.304
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 459.798
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 463.801
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_01_tap.wav",
+   "db": -15,
+   "t": 466.323
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_02_tap_short.wav",
+   "db": -15,
+   "t": 471.796
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/click/click_03_badge_pop.wav",
+   "db": -13,
+   "t": 473.086
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/whoosh/whoosh_01_soft.wav",
+   "db": -11,
+   "t": 474.807
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/riser/riser_02_short.wav",
+   "db": -9,
+   "t": 480.95,
+   "end": true
+  },
+  {
+   "type": "sample",
+   "file": "../../../brand/sfx/impact/impact_03_reverb_cut4s.wav",
+   "db": -9,
+   "t": 480.95
+  }
+ ],
+ "silences": [],
+ "music": {
+  "bpm": 80,
+  "sections": [
+   [
+    0.0,
+    1
+   ],
+   [
+    6.825,
+    2
+   ],
+   [
+    39.322,
+    1
+   ],
+   [
+    96.068,
+    2
+   ],
+   [
+    118.018,
+    3
+   ],
+   [
+    153.706,
+    2
+   ],
+   [
+    182.002,
+    3
+   ],
+   [
+    247.401,
+    2
+   ],
+   [
+    266.461,
+    3
+   ],
+   [
+    299.748,
+    2
+   ],
+   [
+    318.293,
+    3
+   ],
+   [
+    347.594,
+    1
+   ],
+   [
+    391.461,
+    2
+   ],
+   [
+    415.589,
+    1
+   ],
+   [
+    443.902,
+    2
+   ],
+   [
+    475.205,
+    1
+   ]
+  ],
+  "accents": [
+   0.9,
+   39.322,
+   153.706,
+   182.002,
+   299.748,
+   347.594,
+   475.205
+  ]
+ }
+}
